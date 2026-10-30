@@ -1,0 +1,592 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office'
+xmlns:w='urn:schemas-microsoft-com:office:word'
+xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+<meta charset="utf-8">
+<title>Alberto Watch Company — Complete System & Developer Documentation</title>
+<!--[if gte mso 9]>
+<xml>
+<w:WordDocument>
+<w:View>Print</w:View>
+<w:Zoom>100</w:Zoom>
+<w:DoNotOptimizeForBrowser/>
+</w:WordDocument>
+</xml>
+<![endif]-->
+<style>
+@page Section1 {
+    size: 8.5in 11.0in;
+    margin: 1.0in 1.0in 1.0in 1.0in;
+    mso-header-margin: .5in;
+    mso-footer-margin: .5in;
+    mso-paper-source: 0;
+}
+div.Section1 {
+    page: Section1;
+}
+
+body {
+    font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #222222;
+    background-color: #ffffff;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    font-family: 'Georgia', 'Playfair Display', serif;
+    color: #0c1222;
+    margin-top: 24pt;
+    margin-bottom: 8pt;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 24pt;
+    color: #080c1a;
+    border-bottom: 3px solid #c9a84c;
+    padding-bottom: 6pt;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 16pt;
+    color: #0c1222;
+    border-bottom: 1.5px solid #e2c974;
+    padding-bottom: 4pt;
+}
+
+h3 {
+    font-size: 13pt;
+    color: #91742a;
+}
+
+h4 {
+    font-size: 11.5pt;
+    color: #333333;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 8pt;
+}
+
+/* Cover Banner */
+.cover-box {
+    background: #080c1a;
+    color: #f4efe6;
+    padding: 28pt 24pt;
+    border-radius: 8px;
+    border-top: 6px solid #c9a84c;
+    margin-bottom: 24pt;
+}
+
+.cover-title {
+    font-family: 'Georgia', 'Playfair Display', serif;
+    font-size: 26pt;
+    color: #e2c974;
+    margin: 0 0 6pt 0;
+    font-weight: bold;
+}
+
+.cover-subtitle {
+    font-size: 13pt;
+    color: #f4efe6;
+    margin: 0 0 16pt 0;
+    font-style: italic;
+}
+
+.cover-meta {
+    font-size: 9.5pt;
+    color: #aab2cc;
+    border-top: 1px solid rgba(201, 168, 76, 0.4);
+    padding-top: 10pt;
+    margin-top: 12pt;
+}
+
+/* Callouts / Alerts */
+.callout {
+    background-color: #fcf9ee;
+    border-left: 4.5px solid #c9a84c;
+    padding: 10pt 14pt;
+    margin: 12pt 0;
+    border-radius: 0 6px 6px 0;
+}
+
+.callout-title {
+    font-weight: bold;
+    color: #91742a;
+    margin-bottom: 4pt;
+    font-size: 10.5pt;
+}
+
+.callout-info {
+    background-color: #eef5fc;
+    border-left: 4.5px solid #2b7bc4;
+    padding: 10pt 14pt;
+    margin: 12pt 0;
+    border-radius: 0 6px 6px 0;
+}
+
+.callout-info .callout-title {
+    color: #2b7bc4;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14pt 0;
+    font-size: 10pt;
+}
+
+th {
+    background-color: #0c1222;
+    color: #e2c974;
+    font-weight: 600;
+    text-align: left;
+    padding: 8pt 10pt;
+    border: 1px solid #080c1a;
+}
+
+td {
+    padding: 7pt 10pt;
+    border: 1px solid #e5e7eb;
+    vertical-align: top;
+}
+
+tr:nth-child(even) td {
+    background-color: #faf9f6;
+}
+
+/* Code Snippets */
+pre, code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 9.5pt;
+}
+
+code {
+    background-color: #f1f3f7;
+    color: #8f2d56;
+    padding: 1.5pt 4pt;
+    border-radius: 3px;
+    border: 1px solid #e2e5eb;
+}
+
+pre {
+    background-color: #0c1222;
+    color: #e2e8f0;
+    padding: 10pt 12pt;
+    border-radius: 6px;
+    border: 1px solid #1a2238;
+    overflow-x: auto;
+    margin: 10pt 0;
+    line-height: 1.45;
+}
+
+pre code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+    border: none;
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 2pt 7pt;
+    font-size: 8.5pt;
+    font-weight: 600;
+    border-radius: 12px;
+    background-color: #f3ece0;
+    color: #91742a;
+    border: 1px solid #c9a84c;
+}
+
+.badge-green {
+    background-color: #eafaf1;
+    color: #27ae60;
+    border: 1px solid #2ecc71;
+}
+
+/* Lists */
+ul, ol {
+    margin-top: 4pt;
+    margin-bottom: 10pt;
+    padding-left: 20pt;
+}
+
+li {
+    margin-bottom: 4pt;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e0dfdb;
+    margin: 20pt 0;
+}
+</style>
+</head>
+
+<body>
+<div class="Section1">
+
+<!-- COVER BANNER -->
+<div class="cover-box">
+    <div class="cover-title">ALBERTO WATCH COMPANY</div>
+    <div class="cover-subtitle">Complete Technical & Architectural Documentation</div>
+    <div class="cover-meta">
+        <strong>Established:</strong> 1987 &nbsp;|&nbsp;
+        <strong>Framework:</strong> React 19 &nbsp;|&nbsp;
+        <strong>Build System:</strong> Vite 8 &nbsp;|&nbsp;
+        <strong>Iconography:</strong> Lucide React & Custom SVG &nbsp;|&nbsp;
+        <strong>Date:</strong> October 2026
+    </div>
+</div>
+
+<!-- EXECUTIVE SUMMARY -->
+<h2>1. Executive Summary</h2>
+<p>
+    <strong>Alberto Watch Company</strong> is a premier luxury watch retailer and certified horological restoration service. 
+    Founded in 1987 by Swiss-trained master watchmaker Alberto Reyes, the brand operates retail flagships in New York, 
+    Beverly Hills, and Chicago, holding authorized dealer status for Rolex, Michael Kors, Citizen Eco-Drive, and Bulova.
+</p>
+<p>
+    The web application is an ultra-responsive, accessible single-page application built on <strong>React 19</strong> and <strong>Vite 8</strong>. 
+    It features a bespoke luxury dark-gold design system, interactive product catalogs with modal specifications, live boutique locator, 
+    fullscreen lightbox gallery, and an infinite real-time status ticker with geolocation and live ticking clock.
+</p>
+
+<div class="callout">
+    <div class="callout-title">Key Architectural Highlights</div>
+    All legacy emojis and plain unicode bullets have been cleanly transitioned to high-precision <strong>Lucide React</strong> icons 
+    and custom SVG components for uniform luxury branding, cross-browser consistency, and full screen-reader accessibility.
+</div>
+
+<hr/>
+
+<!-- QUICK START -->
+<h2>2. Getting Started & Troubleshooting</h2>
+
+<div class="callout-info">
+    <div class="callout-title">Directory Navigation Notice</div>
+    The web application repository resides inside the subfolder <code>alberto-watch-company</code>. Running <code>npm</code> commands 
+    from the parent <code>Moses</code> workspace directory will return an <code>ENOENT (package.json not found)</code> error.
+</div>
+
+<h3>Standard Launch Commands</h3>
+<pre><code># Step 1: Navigate into the application directory
+cd alberto-watch-company
+
+# Step 2: Install dependencies (if not already installed)
+npm install
+
+# Step 3: Start the local development server with Hot Module Reloading (HMR)
+npm run dev</code></pre>
+
+<h3>Alternative: Running from Workspace Root</h3>
+<p>To run directly from the parent workspace without changing directories, use the <code>--prefix</code> flag:</p>
+<pre><code>npm --prefix alberto-watch-company run dev</code></pre>
+
+<h3>Core NPM Scripts</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Command</th>
+            <th>Function</th>
+            <th>Target Environment</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>npm run dev</code></td>
+            <td>Starts local Vite dev server with instant HMR</td>
+            <td>Development (<code>http://localhost:5173/</code>)</td>
+        </tr>
+        <tr>
+            <td><code>npm run build</code></td>
+            <td>Compiles, tree-shakes, and minifies assets into <code>dist/</code></td>
+            <td>Production Build</td>
+        </tr>
+        <tr>
+            <td><code>npm run preview</code></td>
+            <td>Locally serves the compiled <code>dist/</code> production build</td>
+            <td>Pre-deployment Testing</td>
+        </tr>
+        <tr>
+            <td><code>npm run lint</code></td>
+            <td>Runs Oxlint AST analysis for code quality & react patterns</td>
+            <td>Code Quality</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr/>
+
+<!-- TECHNOLOGY STACK -->
+<h2>3. Technology Stack</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Layer</th>
+            <th>Package</th>
+            <th>Version</th>
+            <th>Description & Responsibility</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>UI Framework</strong></td>
+            <td><code>react</code>, <code>react-dom</code></td>
+            <td><code>^19.3.1</code></td>
+            <td>Component rendering, virtual DOM reconciliation, state hooks.</td>
+        </tr>
+        <tr>
+            <td><strong>Build Engine</strong></td>
+            <td><code>vite</code>, <code>@vitejs/plugin-react</code></td>
+            <td><code>^8.3.5</code></td>
+            <td>Ultra-fast development server, asset pipeline, Rollup production bundling.</td>
+        </tr>
+        <tr>
+            <td><strong>Iconography</strong></td>
+            <td><code>lucide-react</code></td>
+            <td><code>^1.63.0</code></td>
+            <td>Standardized 24x24 stroke vector iconography for UI controls and specifications.</td>
+        </tr>
+        <tr>
+            <td><strong>Branded Icons</strong></td>
+            <td><code>SocialIcons.jsx</code></td>
+            <td>Custom SVG</td>
+            <td>Custom SVG components for Instagram, Facebook, X (Twitter), and YouTube.</td>
+        </tr>
+        <tr>
+            <td><strong>Linter</strong></td>
+            <td><code>oxlint</code></td>
+            <td><code>^1.89.0</code></td>
+            <td>Rust-based high-speed linter verifying syntax, imports, and hooks purity.</td>
+        </tr>
+        <tr>
+            <td><strong>Styling</strong></td>
+            <td>Vanilla CSS3 (<code>index.css</code>)</td>
+            <td>CSS Variables</td>
+            <td>Zero-dependency luxury dark design system, CSS Grid/Flexbox, hardware-accelerated animations.</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr/>
+
+<!-- PROJECT ARCHITECTURE -->
+<h2>4. Directory & File Structure</h2>
+<pre><code>alberto-watch-company/
+├── public/                       # Static public assets
+│   ├── classic_watch.png
+│   ├── favicon.svg
+│   ├── hero_banner.png
+│   ├── luxury_watch.png
+│   ├── smart_watch.png
+│   ├── vintage_watch.png
+│   └── watch_logo.png
+├── src/
+│   ├── components/               # Modular UI Components
+│   │   ├── About.jsx             # Company history, Swiss horology credentials, AWCI highlights
+│   │   ├── Contact.jsx           # Communication cards, social badges, interactive inquiry form
+│   │   ├── Footer.jsx            # Multi-tier sitemap, contact links, brand overview, copyright
+│   │   ├── Gallery.jsx           # Media showcase with zoom hover effect and fullscreen lightbox
+│   │   ├── Hero.jsx              # Banner headline, primary conversion CTAs, company metrics
+│   │   ├── Navbar.jsx            # Responsive sticky navbar, mobile drawer, visitor count pill
+│   │   ├── PriceList.jsx         # Full tabular price list with technical specifications & stock status
+│   │   ├── Products.jsx          # Tabbed category filters, product cards, detailed spec modal
+│   │   ├── SocialIcons.jsx       # Scalable SVG vector components for social media channels
+│   │   ├── StoreLocator.jsx      # Multi-boutique switcher with address, hours, and direct Google Maps
+│   │   ├── Support.jsx           # Guarantee badges (Repair, Warranty, Shipping) & FAQ accordion
+│   │   ├── Technology.jsx        # Horological movements (COSC, Eco-Drive, Sapphire, 262 kHz quartz)
+│   │   └── Ticker.jsx            # Real-time ticking time, geolocation lookup, infinite ticker bar
+│   ├── data/
+│   │   └── watchData.js          # Centralized data store (watches, FAQs, boutiques, innovations)
+│   ├── App.jsx                   # Master layout with IntersectionObserver viewport tracking
+│   ├── index.css                 # Gold luxury design tokens, responsive breakpoints, keyframes
+│   └── main.jsx                  # React application entry point
+├── package.json                  # Manifest & dependencies
+└── vite.config.js                # Vite build configuration</code></pre>
+
+<hr/>
+
+<!-- COMPONENT BREAKDOWN -->
+<h2>5. Detailed Component Specifications</h2>
+
+<h3>5.1 Navbar Component (<code>Navbar.jsx</code>)</h3>
+<ul>
+    <li><strong>Sticky Transition:</strong> Automatically toggles translucent background styling when scroll depth exceeds 60px.</li>
+    <li><strong>Visitor Counter:</strong> Reads persistent visitor count from <code>localStorage</code> / <code>sessionStorage</code> and renders with a pulsing <code>Radio</code> icon.</li>
+    <li><strong>Mobile Drawer:</strong> Accessible mobile drawer with animated hamburger toggle and automatic menu closing upon navigation.</li>
+</ul>
+
+<h3>5.2 Hero Component (<code>Hero.jsx</code>)</h3>
+<ul>
+    <li><strong>Brand Metrics:</strong> Showcases 37+ Years of Excellence, 500+ Timepieces, 12,000+ Verified Customers, and 3 Flagship Boutiques.</li>
+    <li><strong>Conversion Actions:</strong> Direct navigation buttons to explore product collections or schedule an in-person concierge consultation.</li>
+</ul>
+
+<h3>5.3 Products & Modal Component (<code>Products.jsx</code>)</h3>
+<ul>
+    <li><strong>Category Filtering:</strong> Tabs for Luxury, Vintage, Smart, and Classic watch categories.</li>
+    <li><strong>Product Detail Modal:</strong> In-depth dialog overlay detailing case diameter, crystal type, movement caliber, water resistance, stock availability, and direct booking actions.</li>
+    <li><strong>Vector Badges:</strong> Uses Lucide <code>Tag</code>, <code>Gem</code>, <code>CheckCircle</code>, and <code>ChevronRight</code> icons.</li>
+</ul>
+
+<h3>5.4 Technology Showcase (<code>Technology.jsx</code>)</h3>
+<ul>
+    <li><strong>Engineering Spotlights:</strong> Features Swiss Mechanical COSC certification, Eco-Drive solar light harvesting, Mohs-9 sapphire crystal, multi-band GPS, 300m dive resistance, and Bulova 262 kHz Precisionist quartz.</li>
+    <li><strong>Accreditation Badges:</strong> Displays ISO 6425 dive ratings, MIL-STD-810G military standards, and Côtes de Genève finishing standards.</li>
+</ul>
+
+<h3>5.5 Complete Price List (<code>PriceList.jsx</code>)</h3>
+<ul>
+    <li><strong>Data Grid:</strong> Comprehensive sorted table of all models, brands, movements, and water ratings.</li>
+    <li><strong>Stock Indicators:</strong> Real-time status pills using <code>CheckCircle2</code> for In Stock and <code>XCircle</code> for Out of Stock.</li>
+</ul>
+
+<h3>5.6 Visual Gallery & Lightbox (<code>Gallery.jsx</code>)</h3>
+<ul>
+    <li><strong>Hover Zoom:</strong> Micro-interaction revealing title overlay and Lucide <code>ZoomIn</code> icon.</li>
+    <li><strong>Lightbox Dialog:</strong> Modal overlay with keyboard event listeners, backdrop dismissal, and high-resolution imagery.</li>
+</ul>
+
+<h3>5.7 Store Locator (<code>StoreLocator.jsx</code>)</h3>
+<ul>
+    <li><strong>Boutique Selector:</strong> Switch between New York Flagship (Fifth Ave), Beverly Hills (Wilshire Blvd), and Chicago (Magnificent Mile).</li>
+    <li><strong>Direct Maps Integration:</strong> Direct encoded Google Maps URL redirection for driving directions.</li>
+</ul>
+
+<h3>5.8 Support & FAQ Accordion (<code>Support.jsx</code>)</h3>
+<ul>
+    <li><strong>Service Guarantees:</strong> Expert Repair, 3-Year In-House Warranty, Free Insured Shipping ($500+), and 30-Day Hassle-Free Returns.</li>
+    <li><strong>Interactive Accordion:</strong> Animated disclosure widgets for appraisal questions, turnaround times, and financing options.</li>
+</ul>
+
+<h3>5.9 About Us (<code>About.jsx</code>)</h3>
+<ul>
+    <li><strong>Founder Legacy:</strong> Story of master watchmaker Alberto Reyes and 37 years of horological craftsmanship.</li>
+    <li><strong>Credential Grid:</strong> Icons for Geneva/Tokyo certified watchmakers, GIA-certified appraisers, AWCI affiliation, and 4.9/5 star customer reviews.</li>
+</ul>
+
+<h3>5.10 Contact & Social Links (<code>Contact.jsx</code>)</h3>
+<ul>
+    <li><strong>Info Cards:</strong> Headquarters, direct telephone line, email, and operating hours.</li>
+    <li><strong>Branded Social Links:</strong> Styled pills with custom SVG icons for Instagram, Facebook, X (Twitter), and YouTube.</li>
+    <li><strong>Inquiry Form:</strong> Form handling with validation and animated <code>CheckCircle2</code> confirmation banner.</li>
+</ul>
+
+<h3>5.11 Real-Time Ticker (<code>Ticker.jsx</code>)</h3>
+<ul>
+    <li><strong>Clock Heartbeat:</strong> Second-by-second live digital clock.</li>
+    <li><strong>Live Geolocation:</strong> Integrates with OpenStreetMap Nominatim reverse geocoding API to dynamically display the visitor's current city and country code.</li>
+    <li><strong>Infinite Hardware-Accelerated Marquee:</strong> Dual-array seamless continuous CSS scroll.</li>
+</ul>
+
+<hr/>
+
+<!-- DESIGN SYSTEM -->
+<h2>6. Design System & CSS Variables</h2>
+<p>Defined in <code>src/index.css</code>, the luxury theme uses the following CSS tokens:</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Token</th>
+            <th>Value</th>
+            <th>Usage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>--color-gold</code></td>
+            <td><code>#c9a84c</code></td>
+            <td>Primary brand gold, icons, buttons, active states</td>
+        </tr>
+        <tr>
+            <td><code>--color-gold-light</code></td>
+            <td><code>#e2c974</code></td>
+            <td>Hover accents, badge text, headings</td>
+        </tr>
+        <tr>
+            <td><code>--color-gold-dark</code></td>
+            <td><code>#91742a</code></td>
+            <td>Subdued accents, borders</td>
+        </tr>
+        <tr>
+            <td><code>--color-bg-deep</code></td>
+            <td><code>#080c1a</code></td>
+            <td>Page baseline background, footer</td>
+        </tr>
+        <tr>
+            <td><code>--color-bg-primary</code></td>
+            <td><code>#0c1222</code></td>
+            <td>Section backgrounds, table headers</td>
+        </tr>
+        <tr>
+            <td><code>--color-bg-surface</code></td>
+            <td><code>#10172e</code></td>
+            <td>Cards, forms, info panels</td>
+        </tr>
+        <tr>
+            <td><code>--color-bg-card</code></td>
+            <td><code>#16203d</code></td>
+            <td>Product cards, elevated surfaces</td>
+        </tr>
+        <tr>
+            <td><code>--font-heading</code></td>
+            <td><code>'Playfair Display', serif</code></td>
+            <td>Headings, brand typography, editorial titles</td>
+        </tr>
+        <tr>
+            <td><code>--font-body</code></td>
+            <td><code>'Inter', sans-serif</code></td>
+            <td>Body copy, labels, specifications, UI text</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr/>
+
+<!-- MAINTENANCE & EXTENSIBILITY -->
+<h2>7. Maintenance & Extensibility</h2>
+
+<h3>Adding a New Watch Model</h3>
+<p>Open <code>src/data/watchData.js</code> and append a new object to the <code>watches</code> array:</p>
+<pre><code>{
+  id: 13,
+  name: "Chrono Heritage Gold",
+  brand: "Alberto Originals",
+  category: "luxury", // 'luxury' | 'vintage' | 'smart' | 'classic'
+  price: 4850,
+  image: "/luxury_watch.png",
+  description: "Handcrafted 18k gold chronograph with open caseback.",
+  features: [
+    "Swiss Automatic Caliber AO-88",
+    "48-Hour Power Reserve",
+    "Alligator Leather Strap",
+  ],
+  specs: {
+    caseDiameter: "41mm",
+    dialColor: "Champagne Gold",
+    movement: "Automatic Chronograph",
+    crystal: "Double-AR Sapphire",
+    waterResistance: "50m / 165ft",
+  },
+  badge: "Limited Edition",
+  inStock: true,
+}</code></pre>
+<p>The new timepiece will automatically appear in the <strong>Collections Grid</strong>, <strong>Category Filter</strong>, and the <strong>Price List Table</strong> with zero additional code changes.</p>
+
+<hr/>
+
+<div style="text-align: center; font-size: 9pt; color: #777777; margin-top: 24pt;">
+    Alberto Watch Company &copy; 1987&ndash;2026. All Rights Reserved. Confidential & Proprietary Documentation.
+</div>
+
+</div>
+</body>
+</html>
