@@ -85,13 +85,13 @@ export default function Technology({ onOpenAppointment }) {
       <div className="container">
         {/* Section Header */}
         <div className="section-header animate-on-scroll">
-          <span className="section-eyebrow">Horological Engineering</span>
+          <span className="section-eyebrow">Horological Micro-Engineering</span>
           <h2 id="tech-heading" className="section-title">
-            Watch <span className="gold-serif-italic">Technology</span> &amp; Innovation
+            Calibre Architecture &amp; <span className="gold-serif-italic">Innovation</span>
           </h2>
           <p className="section-subtitle">
-            From centuries-old Swiss mechanical craftsmanship to cutting-edge solar and smart technology — discover the
-            engineering marvels that power Alberto’s finest timepieces.
+            From 28,800 vph Swiss lever escapements to 262 kHz torsional quartz and Eco-Drive light absorption.
+            Explore the mechanical schematics, power autonomy, and precision benchmarks that define Alberto timepieces.
           </p>
         </div>
 

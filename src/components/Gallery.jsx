@@ -49,7 +49,7 @@ export default function Gallery() {
               onKeyDown={(e) => e.key === 'Enter' && setLightbox(img)}
             >
               <div className="gallery-img-wrapper">
-                <img src={img.src} alt={img.title} loading="lazy" className="gallery-img" />
+                <img src={img.src} alt={img.title} loading="lazy" className="gallery-img" width="800" height="600" />
                 <div className="gallery-overlay">
                   <span className="gallery-zoom-badge" aria-hidden="true">
                     <ZoomIn size={18} />

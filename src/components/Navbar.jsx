@@ -24,13 +24,37 @@ export default function Navbar({
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  // Monitor scroll for subtle bottom border and shadow
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 40);
+      setScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Lock body scroll when mobile menu drawer is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileOpen]);
+
+  // Close mobile menu on Escape key press
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape' && mobileOpen) {
+        setMobileOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [mobileOpen]);
 
   const handleLinkClick = (id) => {
     onNavClick(id);
@@ -44,10 +68,10 @@ export default function Navbar({
         <div className="container announcement-inner">
           <div className="announcement-left">
             <span className="announcement-dot" aria-hidden="true" />
-            <span>Authorized Dealer: Rolex · Michael Kors · Citizen · Bulova · Manhattan Atelier Est. 1987</span>
+            <span>Authorized Dealer: Rolex · Bulova · Citizen · Michael Kors · Geneva Trained Atelier Est. 1987</span>
           </div>
           <div className="announcement-right">
-            <a href="tel:+12125550194" className="announcement-link">
+            <a href="tel:+12125550194" className="announcement-link" aria-label="Call direct atelier phone line">
               <Phone size={12} aria-hidden="true" />
               <span>+1 (212) 555-0194</span>
             </a>
@@ -63,29 +87,39 @@ export default function Navbar({
         </div>
       </div>
 
-      {/* Main Luxury Navbar */}
+      {/* Main Luxury Primary Navigation */}
       <nav
+        aria-label="Primary"
         className={`navbar ${scrolled ? 'scrolled' : ''}`}
-        role="navigation"
-        aria-label="Main navigation"
       >
         <div className="container navbar-inner">
-          {/* Brand Mark */}
+          {/* Brand Mark (Left) */}
           <button
             type="button"
             className="navbar-brand"
             onClick={() => handleLinkClick('home')}
             aria-label="Alberto Watch Company, return to Home"
           >
-            <img src="/watch_logo.png" alt="" className="brand-crest" aria-hidden="true" />
+            <img
+              src="/watch_logo.png"
+              alt=""
+              className="brand-crest"
+              aria-hidden="true"
+              width="38"
+              height="38"
+            />
             <div className="brand-text">
               <span className="brand-name">Alberto</span>
               <span className="brand-tagline">WATCH COMPANY</span>
             </div>
           </button>
 
-          {/* Desktop Nav Links */}
-          <ul className={`nav-links ${mobileOpen ? 'mobile-open' : ''}`} role="menubar">
+          {/* Nav Links (Center/Right) */}
+          <ul
+            id="primary-nav-menu"
+            className={`nav-links ${mobileOpen ? 'mobile-open' : ''}`}
+            role="menubar"
+          >
             {NAV_SECTIONS.map((s) => (
               <li key={s.id} role="none">
                 <button
@@ -102,7 +136,7 @@ export default function Navbar({
             ))}
           </ul>
 
-          {/* Right Controls */}
+          {/* Action Controls (Far Right) */}
           <div className="navbar-controls">
             {/* Live Visitor / Atelier Activity Indicator */}
             <div className="visitor-pill" aria-label={`${visitorCount.toLocaleString()} visitors recorded`}>
@@ -138,10 +172,11 @@ export default function Navbar({
               type="button"
               className={`hamburger ${mobileOpen ? 'open' : ''}`}
               onClick={() => setMobileOpen(!mobileOpen)}
-              aria-label="Toggle mobile menu"
+              aria-label={mobileOpen ? 'Close navigation menu' : 'Open navigation menu'}
               aria-expanded={mobileOpen}
+              aria-controls="primary-nav-menu"
             >
-              {mobileOpen ? <X size={22} /> : <Menu size={22} />}
+              {mobileOpen ? <X size={22} aria-hidden="true" /> : <Menu size={22} aria-hidden="true" />}
             </button>
           </div>
         </div>

@@ -32,21 +32,22 @@ export default function About({ onOpenAppointment, onNavClick }) {
 
           {/* Content Column */}
           <div className="about-content animate-on-scroll">
-            <span className="section-eyebrow">Our Story &amp; Heritage</span>
+            <span className="section-eyebrow">Atelier Lineage Since 1987</span>
             <h2 id="about-heading" className="section-title">
-              More Than a Watch — <span className="gold-serif-italic">A Timeless Legacy.</span>
+              Master Watchmaking &amp; <span className="gold-serif-italic">Horological Heritage.</span>
             </h2>
 
             <div className="about-prose">
               <p>
-                Alberto Watch Company was founded in 1987 by Alberto Reyes, a master watchmaker trained in Geneva,
-                Switzerland. What started as a dedicated repair workshop in downtown New York has grown into one of North
-                America&apos;s most respected luxury watch retailers, restoration centers, and certified appraisal salons.
+                Alberto Watch Company was founded in 1987 by Alberto Reyes, a master horologist trained at the
+                École d&apos;Horlogerie de Genève. What originated as a dedicated restoration workshop in downtown New
+                York has evolved into one of North America&apos;s most respected luxury watch curators, restoration ateliers,
+                and certified appraisal salons.
               </p>
               <p>
-                We believe that a truly great watch is more than a timekeeping instrument — it is a testament to human
-                ingenuity, artistic heritage, and mechanical beauty. Every timepiece in our vault is personally curated,
-                inspected, and regulated by our team of certified horologists.
+                We view fine watchmaking as an enduring convergence of micro-mechanical engineering and artistic devotion.
+                Every reference entering our vault undergoes rigorous 5-position amplitude regulation, waterproof pressure
+                validation, and movement certification by AWCI-certified master watchmakers.
               </p>
             </div>
 

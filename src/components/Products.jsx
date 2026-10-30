@@ -222,13 +222,13 @@ export default function Products({
       <div className="container">
         {/* Section Header */}
         <div className="section-header animate-on-scroll">
-          <span className="section-eyebrow">Curated Horological Collections</span>
+          <span className="section-eyebrow">Haute Horlogerie &amp; Curated Vault</span>
           <h2 id="products-heading" className="section-title">
-            Our <span className="gold-serif-italic">Collections</span>
+            Curated <span className="gold-serif-italic">Timepiece</span> Vault
           </h2>
           <p className="section-subtitle">
-            Discover our curated selection of luxury, vintage, smart, and classic timepieces — each an authentic
-            masterpiece of precision engineering and timeless aesthetic beauty.
+            Authenticated luxury, restored vintage, high-frequency quartz, and connected calibres. Each reference is
+            individually inspected, regulated on five positions, and issued with an official atelier appraisal certificate.
           </p>
         </div>
 
@@ -313,7 +313,13 @@ export default function Products({
                 >
                   {/* Card Media Header */}
                   <div className="product-card-image">
-                    <img src={watch.image} alt={watch.name} loading="lazy" />
+                    <img
+                      src={watch.image}
+                      alt={`${watch.brand} ${watch.name}`}
+                      loading="lazy"
+                      width="360"
+                      height="240"
+                    />
 
                     {/* Reference tag */}
                     <span className="product-ref-pill">{watch.reference}</span>

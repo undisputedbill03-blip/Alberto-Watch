@@ -14,13 +14,13 @@ export default function Support({ onNavClick }) {
       <div className="container">
         {/* Section Header */}
         <div className="section-header animate-on-scroll">
-          <span className="section-eyebrow">Client Services &amp; Commitments</span>
+          <span className="section-eyebrow">Atelier Commitments &amp; Advisory</span>
           <h2 id="support-heading" className="section-title">
-            Customer <span className="gold-serif-italic">Support</span> &amp; Guarantees
+            Service <span className="gold-serif-italic">Standards</span> &amp; FAQ
           </h2>
           <p className="section-subtitle">
-            Have questions about our watch collections, repair services, or appraisals? Browse our service guarantees
-            and frequently asked questions or reach out to our team directly.
+            Review our certified bench restoration protocols, international armored shipping standards, 3-year
+            mechanical warranties, and collector guidance.
           </p>
         </div>
 

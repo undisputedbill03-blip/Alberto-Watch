@@ -46,13 +46,13 @@ export default function PriceList({ onSelectWatch }) {
       <div className="container">
         {/* Section Header */}
         <div className="section-header animate-on-scroll">
-          <span className="section-eyebrow">Horological Catalog &amp; Valuation</span>
+          <span className="section-eyebrow">Archival Valuation Ledger</span>
           <h2 id="price-heading" className="section-title">
-            Complete <span className="gold-serif-italic">Price List</span>
+            Complete <span className="gold-serif-italic">Valuation</span> Ledger
           </h2>
           <p className="section-subtitle">
-            Transparent pricing on all our timepieces. All prices are in USD and include luxury presentation packaging,
-            official certificates of authenticity, and our comprehensive 3-Year Atelier Warranty.
+            Transparent atelier pricing across every reference in vault. All figures include authenticated presentation
+            chests, written certificates of origin, and our comprehensive 3-Year Atelier Bench Warranty.
           </p>
         </div>
 

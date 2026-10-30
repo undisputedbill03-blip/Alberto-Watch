@@ -68,13 +68,13 @@ export default function Contact({ prefilledWatch = null }) {
       <div className="container">
         {/* Section Header */}
         <div className="section-header animate-on-scroll">
-          <span className="section-eyebrow">Client Assistance &amp; Inquiries</span>
+          <span className="section-eyebrow">Private Client Desk</span>
           <h2 id="contact-heading" className="section-title">
-            Get In <span className="gold-serif-italic">Touch</span> With Our Atelier
+            Consult Our <span className="gold-serif-italic">Master Horologists</span>
           </h2>
           <p className="section-subtitle">
-            Whether you have a question about our curated collection, need expert repair advice, or want to schedule an
-            insurance appraisal — our team of certified horologists is ready to assist.
+            Direct inquiry line to our Manhattan, Beverly Hills, and Chicago bench horologists for timepiece acquisition,
+            bespoke complication sourcing, and insurance appraisal appointments.
           </p>
         </div>
 

@@ -11,13 +11,13 @@ export default function StoreLocator({ onOpenAppointment }) {
       <div className="container">
         {/* Section Header */}
         <div className="section-header animate-on-scroll">
-          <span className="section-eyebrow">Boutique Locations</span>
+          <span className="section-eyebrow">Boutique Salons &amp; Ateliers</span>
           <h2 id="store-heading" className="section-title">
-            Store <span className="gold-serif-italic">Locator</span> &amp; Flagship Salons
+            Flagship <span className="gold-serif-italic">Salons</span> &amp; Workbenches
           </h2>
           <p className="section-subtitle">
-            Visit any of our three flagship boutiques for an immersive experience with our collections, expert repair
-            services, and personalized horological consultations.
+            Experience private viewing suites, on-bench movement diagnostics, and certified appraisal consultations
+            within our Manhattan, Beverly Hills, and Chicago flagships.
           </p>
         </div>
 

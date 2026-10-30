@@ -36,7 +36,7 @@ export default function Footer({ onNavClick, onOpenAppointment }) {
           {/* Brand Column */}
           <div className="footer-col-brand">
             <div className="footer-brand-logo">
-              <img src="/watch_logo.png" alt="Alberto Watch Company Logo" />
+              <img src="/watch_logo.png" alt="Alberto Watch Company Logo" width="36" height="36" />
               <span className="footer-brand-name">Alberto Watch Company</span>
             </div>
             <p className="footer-brand-desc">
